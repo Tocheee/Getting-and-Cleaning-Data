@@ -1,12 +1,13 @@
-# Getting-and-Cleaning-Data\
+# Getting-and-Cleaning-Data
 #RUN ANALYSIS CODEBBOOK
+
 Open RStudio and set the working directory to destination folder on my desktop.
 
 
 ## Collecting the data
 url : contains link to data
 
-Install dplyr and stringr package to help in manipulating the text data.
+Install dplyr and stringr package to help in manipulating the text data towards the end of code.
 
 zippedfile: downloads the url and stores it in the destination folder "projectdata.zip"
 
@@ -21,6 +22,7 @@ activity_labels: a lookup table containing the 6 activity descriptions:
 * Laying
 
 features: Contains variables to be included in the dataset as column names for the tidy dataset cleantable
+features2: The second column in features is converted to a character variable using as.character. This will be used to create column namesfor our clean table
 
 ## Creating the tables
 Tables are created by reading the appropriate files from 'unfile' using read.table and merging the resulting datasets together.
