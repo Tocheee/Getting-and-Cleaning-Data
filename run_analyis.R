@@ -42,7 +42,7 @@ colnames(mergeframe) <- c("Subject","Activity", features2)
 ## Extract only columns whose names contain mean or std
 df <- mergeframe[,grep("Subject|Activity|mean\\(\\)|std\\(\\)",colnames(mergeframe))]
 
-## Assign descriptive names to eacj activity using a lookup table
+## Assign descriptive names to each activity using a lookup table
 df$Activity <- activity_labels[,2][match(df$Activity, activity_labels[,1])]
 
 ## Creating the final tidy table
